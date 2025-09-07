@@ -3,8 +3,7 @@ from src import data_preprocessing, feature_engineering, model, evaluate, predic
 def main():
     # 1. Carrega e limpa os dados de múltiplas planilhas
     excel_files = [
-        "data/raw/DB Clima 1 Min.xlsx",
-        "data/raw/DB Clima 5 Min.xlsx"
+        "data/raw/open-meteo-10.65S37.41W187m.xlsx"
     ]
     df = data_preprocessing.load_and_clean(excel_files)
 
