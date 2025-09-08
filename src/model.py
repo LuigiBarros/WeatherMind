@@ -14,7 +14,6 @@ def train_model(X, y):
     model = MLPClassifier(hidden_layer_sizes=(100, 50), max_iter=500, random_state=42)
     model.fit(X_train, y_train)
     
-    # Salva o modelo treinado
     joblib.dump(model, "models/model.pkl")
     
     return model, X_test, y_test

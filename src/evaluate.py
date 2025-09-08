@@ -13,7 +13,6 @@ def evaluate_model(model, X_test, y_test):
     print("\n📊 Relatório de Classificação:")
     print(classification_report(y_test, y_pred))
     
-    # Matriz de confusão
     cm = confusion_matrix(y_test, y_pred)
     plt.figure(figsize=(5,4))
     sns.heatmap(cm, annot=True, fmt="d", cmap="Blues")
